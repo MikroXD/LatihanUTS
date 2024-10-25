@@ -1,8 +1,8 @@
-const Mahasiswa = require("../models/mahasiswa");
-exports.Index = async(req,res) =>{
+const Produk = require("../models/mahasiswa");
+Const.ProdukIndex = async(req,res) =>{
     try {
-        const mahasiswas = await Mahasiswa.find({});
-        res.status(200).json(mahasiswas);
+        const Produk = await Mahasiswa.find({});
+        res.status(200).json(message:'Success');
         if(!mahasiswas){
             res.status(400).json ({message : "Collection is Empty"})
         }
